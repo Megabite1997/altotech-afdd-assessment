@@ -1,13 +1,31 @@
 name: altotech-afdd
 
+# Compose auto-loads ./.env for interpolation, so every setting below works with
+# or without one. `cp .env.example .env` to change anything; the defaults here
+# are the documented ones.
 x-platform-image: &platform
   build:
     context: ./services/platform
-  env_file: [.env]
   environment:
     DATABASE_URL: postgresql://afdd:afdd@timescaledb:5432/afdd
     KAFKA_BOOTSTRAP: redpanda:9092
     SOURCE_DIR: /srv/source-pack
+    TELEMETRY_TOPIC: ${TELEMETRY_TOPIC:-telemetry.device.v1}
+    CONSUMER_GROUP: ${CONSUMER_GROUP:-afdd-ingest}
+    TOPIC_PARTITIONS: ${TOPIC_PARTITIONS:-6}
+    SIM_INTERVAL_SECONDS: ${SIM_INTERVAL_SECONDS:-60}
+    SIM_SPEEDUP: ${SIM_SPEEDUP:-60}
+    SIM_BUILDINGS: ${SIM_BUILDINGS:-*}
+    SIM_LOOP: ${SIM_LOOP:-false}
+    EVAL_CLOCK: ${EVAL_CLOCK:-data}
+    EVAL_TICK_SECONDS: ${EVAL_TICK_SECONDS:-5}
+    LLM_PROVIDER: ${LLM_PROVIDER:-anthropic}
+    ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    LLM_MODEL: ${LLM_MODEL:-claude-sonnet-5}
+    AGENT_MAX_ITERATIONS: ${AGENT_MAX_ITERATIONS:-6}
+    AGENT_TIMEOUT_SECONDS: ${AGENT_TIMEOUT_SECONDS:-90}
+    API_CORS_ORIGINS: ${API_CORS_ORIGINS:-*}
+    LOG_LEVEL: ${LOG_LEVEL:-INFO}
   volumes:
     - ./source-pack:/srv/source-pack:ro
   restart: unless-stopped
@@ -27,7 +45,7 @@ services:
       test: ["CMD-SHELL", "pg_isready -U afdd -d afdd"]
       interval: 5s
       timeout: 5s
-      retries: 30
+      retries: 40
 
   redpanda:
     image: redpandadata/redpanda:v24.2.7
@@ -49,7 +67,7 @@ services:
       test: ["CMD-SHELL", "rpk cluster health | grep -q 'Healthy:.*true'"]
       interval: 5s
       timeout: 5s
-      retries: 30
+      retries: 40
 
   # --- one-shot: migrate, load the ontology, install the default rules ------
   seed:
@@ -82,11 +100,11 @@ services:
 
   simulator:
     <<: *platform
+    restart: "no"
     command: ["afdd", "simulate"]
     depends_on:
       ingest: {condition: service_started}
       redpanda: {condition: service_healthy}
-    restart: "no"
 
   evaluator:
     <<: *platform

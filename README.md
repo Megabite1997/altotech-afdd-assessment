@@ -11,13 +11,16 @@ AltoTech Global — Senior Full Stack Engineer technical assessment.
 
 ## Quickstart
 
-Prerequisites: Docker Desktop (running), ~4 GB free, ports 3000, 8000, 5432,
-19092.
+Prerequisites: Docker Desktop **running**, ~4 GB free, ports 3000, 8000, 5432
+and 19092 available.
 
 ```bash
-cp .env.example .env
 docker compose up --build
 ```
+
+That is the whole setup. Compose ships working defaults for every setting, so a
+`.env` is optional — copy `.env.example` to `.env` only when you want to change
+something (an `ANTHROPIC_API_KEY`, a different replay speed).
 
 That one command applies migrations, loads the Brickschema ontology from the
 supplied source pack, installs the rules, and starts the broker, device

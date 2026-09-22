@@ -9,7 +9,6 @@ help: ## Show this help
 	  | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-16s\033[0m %s\n", $$1, $$2}'
 
 up: ## Start the whole stack (migrations, seed, broker, simulator, evaluator, API, UI)
-	@test -f .env || cp .env.example .env
 	$(COMPOSE) up --build
 
 down: ## Stop the stack and remove volumes
@@ -36,8 +35,7 @@ backtest: ## Backtest the shipped rule over the full source window
 
 test: ## Run the Python test suite inside the container
 	$(COMPOSE) run --rm --no-deps -e SOURCE_DIR_TEST=/srv/source-pack \
-	  -v $(PWD)/$(PLATFORM)/tests:/srv/app/tests api \
-	  sh -c "pip install -q pytest==8.3.4 && pytest -q"
+	  -v $(PWD)/$(PLATFORM)/tests:/srv/app/tests api pytest -q
 
 test-local: ## Run the Python test suite on the host (no database or broker needed)
 	cd $(PLATFORM) && python -m pytest -q
