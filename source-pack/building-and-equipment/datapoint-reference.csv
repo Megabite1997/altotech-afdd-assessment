@@ -1,0 +1,289 @@
+source_point_id,equipment_id,source_name,description,value_type,unit,expected_interval_seconds
+meter-a-f01-power,meter-a-f01,POWER_KW,Active electrical power,number,kW,60
+meter-a-f01-energy,meter-a-f01,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-a-f01-east-run,ahu-a-f01-east,RUN,AHU running status,enum,,60
+ahu-a-f01-east-alarm,ahu-a-f01-east,ALARM,AHU alarm status,enum,,60
+ahu-a-f01-east-sat,ahu-a-f01-east,SAT,Supply-air temperature,number,degC,60
+ahu-a-f01-east-rat,ahu-a-f01-east,RAT,Return-air temperature,number,degC,60
+ahu-a-f01-east-sat-sp,ahu-a-f01-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f01-east-r01-temperature,iaq-a-f01-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f01-east-r01-humidity,iaq-a-f01-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f01-east-r01-co2,iaq-a-f01-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f01-east-r02-temperature,iaq-a-f01-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f01-east-r02-humidity,iaq-a-f01-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f01-east-r02-co2,iaq-a-f01-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-a-f01-west-run,ahu-a-f01-west,RUN,AHU running status,enum,,60
+ahu-a-f01-west-alarm,ahu-a-f01-west,ALARM,AHU alarm status,enum,,60
+ahu-a-f01-west-sat,ahu-a-f01-west,SAT,Supply-air temperature,number,degC,60
+ahu-a-f01-west-rat,ahu-a-f01-west,RAT,Return-air temperature,number,degC,60
+ahu-a-f01-west-sat-sp,ahu-a-f01-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f01-west-r01-temperature,iaq-a-f01-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f01-west-r01-humidity,iaq-a-f01-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f01-west-r01-co2,iaq-a-f01-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f01-west-r02-temperature,iaq-a-f01-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f01-west-r02-humidity,iaq-a-f01-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f01-west-r02-co2,iaq-a-f01-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-a-f02-power,meter-a-f02,POWER_KW,Active electrical power,number,kW,60
+meter-a-f02-energy,meter-a-f02,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-a-f02-east-run,ahu-a-f02-east,RUN,AHU running status,enum,,60
+ahu-a-f02-east-alarm,ahu-a-f02-east,ALARM,AHU alarm status,enum,,60
+ahu-a-f02-east-sat,ahu-a-f02-east,SAT,Supply-air temperature,number,degC,60
+ahu-a-f02-east-rat,ahu-a-f02-east,RAT,Return-air temperature,number,degC,60
+ahu-a-f02-east-sat-sp,ahu-a-f02-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f02-east-r01-temperature,iaq-a-f02-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f02-east-r01-humidity,iaq-a-f02-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f02-east-r01-co2,iaq-a-f02-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f02-east-r02-temperature,iaq-a-f02-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f02-east-r02-humidity,iaq-a-f02-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f02-east-r02-co2,iaq-a-f02-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-a-f02-west-run,ahu-a-f02-west,RUN,AHU running status,enum,,60
+ahu-a-f02-west-alarm,ahu-a-f02-west,ALARM,AHU alarm status,enum,,60
+ahu-a-f02-west-sat,ahu-a-f02-west,SAT,Supply-air temperature,number,degC,60
+ahu-a-f02-west-rat,ahu-a-f02-west,RAT,Return-air temperature,number,degC,60
+ahu-a-f02-west-sat-sp,ahu-a-f02-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f02-west-r01-temperature,iaq-a-f02-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f02-west-r01-humidity,iaq-a-f02-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f02-west-r01-co2,iaq-a-f02-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f02-west-r02-temperature,iaq-a-f02-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f02-west-r02-humidity,iaq-a-f02-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f02-west-r02-co2,iaq-a-f02-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-a-f03-power,meter-a-f03,POWER_KW,Active electrical power,number,kW,60
+meter-a-f03-energy,meter-a-f03,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-a-f03-east-run,ahu-a-f03-east,RUN,AHU running status,enum,,60
+ahu-a-f03-east-alarm,ahu-a-f03-east,ALARM,AHU alarm status,enum,,60
+ahu-a-f03-east-sat,ahu-a-f03-east,SAT,Supply-air temperature,number,degC,60
+ahu-a-f03-east-rat,ahu-a-f03-east,RAT,Return-air temperature,number,degC,60
+ahu-a-f03-east-sat-sp,ahu-a-f03-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f03-east-r01-temperature,iaq-a-f03-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f03-east-r01-humidity,iaq-a-f03-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f03-east-r01-co2,iaq-a-f03-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f03-east-r02-temperature,iaq-a-f03-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f03-east-r02-humidity,iaq-a-f03-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f03-east-r02-co2,iaq-a-f03-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-a-f03-west-run,ahu-a-f03-west,RUN,AHU running status,enum,,60
+ahu-a-f03-west-alarm,ahu-a-f03-west,ALARM,AHU alarm status,enum,,60
+ahu-a-f03-west-sat,ahu-a-f03-west,SAT,Supply-air temperature,number,degC,60
+ahu-a-f03-west-rat,ahu-a-f03-west,RAT,Return-air temperature,number,degC,60
+ahu-a-f03-west-sat-sp,ahu-a-f03-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f03-west-r01-temperature,iaq-a-f03-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f03-west-r01-humidity,iaq-a-f03-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f03-west-r01-co2,iaq-a-f03-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f03-west-r02-temperature,iaq-a-f03-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f03-west-r02-humidity,iaq-a-f03-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f03-west-r02-co2,iaq-a-f03-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-a-f04-power,meter-a-f04,POWER_KW,Active electrical power,number,kW,60
+meter-a-f04-energy,meter-a-f04,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-a-f04-east-run,ahu-a-f04-east,RUN,AHU running status,enum,,60
+ahu-a-f04-east-alarm,ahu-a-f04-east,ALARM,AHU alarm status,enum,,60
+ahu-a-f04-east-sat,ahu-a-f04-east,SAT,Supply-air temperature,number,degC,60
+ahu-a-f04-east-rat,ahu-a-f04-east,RAT,Return-air temperature,number,degC,60
+ahu-a-f04-east-sat-sp,ahu-a-f04-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f04-east-r01-temperature,iaq-a-f04-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f04-east-r01-humidity,iaq-a-f04-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f04-east-r01-co2,iaq-a-f04-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f04-east-r02-temperature,iaq-a-f04-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f04-east-r02-humidity,iaq-a-f04-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f04-east-r02-co2,iaq-a-f04-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-a-f04-west-run,ahu-a-f04-west,RUN,AHU running status,enum,,60
+ahu-a-f04-west-alarm,ahu-a-f04-west,ALARM,AHU alarm status,enum,,60
+ahu-a-f04-west-sat,ahu-a-f04-west,SAT,Supply-air temperature,number,degC,60
+ahu-a-f04-west-rat,ahu-a-f04-west,RAT,Return-air temperature,number,degC,60
+ahu-a-f04-west-sat-sp,ahu-a-f04-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-a-f04-west-r01-temperature,iaq-a-f04-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f04-west-r01-humidity,iaq-a-f04-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-a-f04-west-r01-co2,iaq-a-f04-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-a-f04-west-r02-temperature,iaq-a-f04-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-a-f04-west-r02-humidity,iaq-a-f04-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-a-f04-west-r02-co2,iaq-a-f04-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-b-f01-power,meter-b-f01,POWER_KW,Active electrical power,number,kW,60
+meter-b-f01-energy,meter-b-f01,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-b-f01-east-run,ahu-b-f01-east,RUN,AHU running status,enum,,60
+ahu-b-f01-east-alarm,ahu-b-f01-east,ALARM,AHU alarm status,enum,,60
+ahu-b-f01-east-sat,ahu-b-f01-east,SAT,Supply-air temperature,number,degC,60
+ahu-b-f01-east-rat,ahu-b-f01-east,RAT,Return-air temperature,number,degC,60
+ahu-b-f01-east-sat-sp,ahu-b-f01-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f01-east-r01-temperature,iaq-b-f01-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f01-east-r01-humidity,iaq-b-f01-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f01-east-r01-co2,iaq-b-f01-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f01-east-r02-temperature,iaq-b-f01-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f01-east-r02-humidity,iaq-b-f01-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f01-east-r02-co2,iaq-b-f01-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-b-f01-west-run,ahu-b-f01-west,RUN,AHU running status,enum,,60
+ahu-b-f01-west-alarm,ahu-b-f01-west,ALARM,AHU alarm status,enum,,60
+ahu-b-f01-west-sat,ahu-b-f01-west,SAT,Supply-air temperature,number,degC,60
+ahu-b-f01-west-rat,ahu-b-f01-west,RAT,Return-air temperature,number,degC,60
+ahu-b-f01-west-sat-sp,ahu-b-f01-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f01-west-r01-temperature,iaq-b-f01-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f01-west-r01-humidity,iaq-b-f01-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f01-west-r01-co2,iaq-b-f01-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f01-west-r02-temperature,iaq-b-f01-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f01-west-r02-humidity,iaq-b-f01-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f01-west-r02-co2,iaq-b-f01-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-b-f02-power,meter-b-f02,POWER_KW,Active electrical power,number,kW,60
+meter-b-f02-energy,meter-b-f02,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-b-f02-east-run,ahu-b-f02-east,RUN,AHU running status,enum,,60
+ahu-b-f02-east-alarm,ahu-b-f02-east,ALARM,AHU alarm status,enum,,60
+ahu-b-f02-east-sat,ahu-b-f02-east,SAT,Supply-air temperature,number,degC,60
+ahu-b-f02-east-rat,ahu-b-f02-east,RAT,Return-air temperature,number,degC,60
+ahu-b-f02-east-sat-sp,ahu-b-f02-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f02-east-r01-temperature,iaq-b-f02-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f02-east-r01-humidity,iaq-b-f02-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f02-east-r01-co2,iaq-b-f02-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f02-east-r02-temperature,iaq-b-f02-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f02-east-r02-humidity,iaq-b-f02-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f02-east-r02-co2,iaq-b-f02-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-b-f02-west-run,ahu-b-f02-west,RUN,AHU running status,enum,,60
+ahu-b-f02-west-alarm,ahu-b-f02-west,ALARM,AHU alarm status,enum,,60
+ahu-b-f02-west-sat,ahu-b-f02-west,SAT,Supply-air temperature,number,degC,60
+ahu-b-f02-west-rat,ahu-b-f02-west,RAT,Return-air temperature,number,degC,60
+ahu-b-f02-west-sat-sp,ahu-b-f02-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f02-west-r01-temperature,iaq-b-f02-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f02-west-r01-humidity,iaq-b-f02-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f02-west-r01-co2,iaq-b-f02-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f02-west-r02-temperature,iaq-b-f02-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f02-west-r02-humidity,iaq-b-f02-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f02-west-r02-co2,iaq-b-f02-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-b-f03-power,meter-b-f03,POWER_KW,Active electrical power,number,kW,60
+meter-b-f03-energy,meter-b-f03,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-b-f03-east-run,ahu-b-f03-east,RUN,AHU running status,enum,,60
+ahu-b-f03-east-alarm,ahu-b-f03-east,ALARM,AHU alarm status,enum,,60
+ahu-b-f03-east-sat,ahu-b-f03-east,SAT,Supply-air temperature,number,degC,60
+ahu-b-f03-east-rat,ahu-b-f03-east,RAT,Return-air temperature,number,degC,60
+ahu-b-f03-east-sat-sp,ahu-b-f03-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f03-east-r01-temperature,iaq-b-f03-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f03-east-r01-humidity,iaq-b-f03-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f03-east-r01-co2,iaq-b-f03-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f03-east-r02-temperature,iaq-b-f03-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f03-east-r02-humidity,iaq-b-f03-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f03-east-r02-co2,iaq-b-f03-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-b-f03-west-run,ahu-b-f03-west,RUN,AHU running status,enum,,60
+ahu-b-f03-west-alarm,ahu-b-f03-west,ALARM,AHU alarm status,enum,,60
+ahu-b-f03-west-sat,ahu-b-f03-west,SAT,Supply-air temperature,number,degC,60
+ahu-b-f03-west-rat,ahu-b-f03-west,RAT,Return-air temperature,number,degC,60
+ahu-b-f03-west-sat-sp,ahu-b-f03-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f03-west-r01-temperature,iaq-b-f03-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f03-west-r01-humidity,iaq-b-f03-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f03-west-r01-co2,iaq-b-f03-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f03-west-r02-temperature,iaq-b-f03-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f03-west-r02-humidity,iaq-b-f03-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f03-west-r02-co2,iaq-b-f03-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-b-f04-power,meter-b-f04,POWER_KW,Active electrical power,number,kW,60
+meter-b-f04-energy,meter-b-f04,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-b-f04-east-run,ahu-b-f04-east,RUN,AHU running status,enum,,60
+ahu-b-f04-east-alarm,ahu-b-f04-east,ALARM,AHU alarm status,enum,,60
+ahu-b-f04-east-sat,ahu-b-f04-east,SAT,Supply-air temperature,number,degC,60
+ahu-b-f04-east-rat,ahu-b-f04-east,RAT,Return-air temperature,number,degC,60
+ahu-b-f04-east-sat-sp,ahu-b-f04-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f04-east-r01-temperature,iaq-b-f04-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f04-east-r01-humidity,iaq-b-f04-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f04-east-r01-co2,iaq-b-f04-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f04-east-r02-temperature,iaq-b-f04-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f04-east-r02-humidity,iaq-b-f04-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f04-east-r02-co2,iaq-b-f04-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-b-f04-west-run,ahu-b-f04-west,RUN,AHU running status,enum,,60
+ahu-b-f04-west-alarm,ahu-b-f04-west,ALARM,AHU alarm status,enum,,60
+ahu-b-f04-west-sat,ahu-b-f04-west,SAT,Supply-air temperature,number,degC,60
+ahu-b-f04-west-rat,ahu-b-f04-west,RAT,Return-air temperature,number,degC,60
+ahu-b-f04-west-sat-sp,ahu-b-f04-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-b-f04-west-r01-temperature,iaq-b-f04-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f04-west-r01-humidity,iaq-b-f04-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-b-f04-west-r01-co2,iaq-b-f04-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-b-f04-west-r02-temperature,iaq-b-f04-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-b-f04-west-r02-humidity,iaq-b-f04-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-b-f04-west-r02-co2,iaq-b-f04-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-c-f01-power,meter-c-f01,POWER_KW,Active electrical power,number,kW,60
+meter-c-f01-energy,meter-c-f01,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-c-f01-east-run,ahu-c-f01-east,RUN,AHU running status,enum,,60
+ahu-c-f01-east-alarm,ahu-c-f01-east,ALARM,AHU alarm status,enum,,60
+ahu-c-f01-east-sat,ahu-c-f01-east,SAT,Supply-air temperature,number,degC,60
+ahu-c-f01-east-rat,ahu-c-f01-east,RAT,Return-air temperature,number,degC,60
+ahu-c-f01-east-sat-sp,ahu-c-f01-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f01-east-r01-temperature,iaq-c-f01-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f01-east-r01-humidity,iaq-c-f01-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f01-east-r01-co2,iaq-c-f01-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f01-east-r02-temperature,iaq-c-f01-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f01-east-r02-humidity,iaq-c-f01-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f01-east-r02-co2,iaq-c-f01-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-c-f01-west-run,ahu-c-f01-west,RUN,AHU running status,enum,,60
+ahu-c-f01-west-alarm,ahu-c-f01-west,ALARM,AHU alarm status,enum,,60
+ahu-c-f01-west-sat,ahu-c-f01-west,SAT,Supply-air temperature,number,degC,60
+ahu-c-f01-west-rat,ahu-c-f01-west,RAT,Return-air temperature,number,degC,60
+ahu-c-f01-west-sat-sp,ahu-c-f01-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f01-west-r01-temperature,iaq-c-f01-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f01-west-r01-humidity,iaq-c-f01-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f01-west-r01-co2,iaq-c-f01-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f01-west-r02-temperature,iaq-c-f01-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f01-west-r02-humidity,iaq-c-f01-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f01-west-r02-co2,iaq-c-f01-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-c-f02-power,meter-c-f02,POWER_KW,Active electrical power,number,kW,60
+meter-c-f02-energy,meter-c-f02,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-c-f02-east-run,ahu-c-f02-east,RUN,AHU running status,enum,,60
+ahu-c-f02-east-alarm,ahu-c-f02-east,ALARM,AHU alarm status,enum,,60
+ahu-c-f02-east-sat,ahu-c-f02-east,SAT,Supply-air temperature,number,degC,60
+ahu-c-f02-east-rat,ahu-c-f02-east,RAT,Return-air temperature,number,degC,60
+ahu-c-f02-east-sat-sp,ahu-c-f02-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f02-east-r01-temperature,iaq-c-f02-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f02-east-r01-humidity,iaq-c-f02-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f02-east-r01-co2,iaq-c-f02-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f02-east-r02-temperature,iaq-c-f02-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f02-east-r02-humidity,iaq-c-f02-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f02-east-r02-co2,iaq-c-f02-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-c-f02-west-run,ahu-c-f02-west,RUN,AHU running status,enum,,60
+ahu-c-f02-west-alarm,ahu-c-f02-west,ALARM,AHU alarm status,enum,,60
+ahu-c-f02-west-sat,ahu-c-f02-west,SAT,Supply-air temperature,number,degC,60
+ahu-c-f02-west-rat,ahu-c-f02-west,RAT,Return-air temperature,number,degC,60
+ahu-c-f02-west-sat-sp,ahu-c-f02-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f02-west-r01-temperature,iaq-c-f02-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f02-west-r01-humidity,iaq-c-f02-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f02-west-r01-co2,iaq-c-f02-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f02-west-r02-temperature,iaq-c-f02-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f02-west-r02-humidity,iaq-c-f02-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f02-west-r02-co2,iaq-c-f02-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-c-f03-power,meter-c-f03,POWER_KW,Active electrical power,number,kW,60
+meter-c-f03-energy,meter-c-f03,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-c-f03-east-run,ahu-c-f03-east,RUN,AHU running status,enum,,60
+ahu-c-f03-east-alarm,ahu-c-f03-east,ALARM,AHU alarm status,enum,,60
+ahu-c-f03-east-sat,ahu-c-f03-east,SAT,Supply-air temperature,number,degC,60
+ahu-c-f03-east-rat,ahu-c-f03-east,RAT,Return-air temperature,number,degC,60
+ahu-c-f03-east-sat-sp,ahu-c-f03-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f03-east-r01-temperature,iaq-c-f03-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f03-east-r01-humidity,iaq-c-f03-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f03-east-r01-co2,iaq-c-f03-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f03-east-r02-temperature,iaq-c-f03-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f03-east-r02-humidity,iaq-c-f03-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f03-east-r02-co2,iaq-c-f03-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-c-f03-west-run,ahu-c-f03-west,RUN,AHU running status,enum,,60
+ahu-c-f03-west-alarm,ahu-c-f03-west,ALARM,AHU alarm status,enum,,60
+ahu-c-f03-west-sat,ahu-c-f03-west,SAT,Supply-air temperature,number,degC,60
+ahu-c-f03-west-rat,ahu-c-f03-west,RAT,Return-air temperature,number,degC,60
+ahu-c-f03-west-sat-sp,ahu-c-f03-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f03-west-r01-temperature,iaq-c-f03-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f03-west-r01-humidity,iaq-c-f03-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f03-west-r01-co2,iaq-c-f03-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f03-west-r02-temperature,iaq-c-f03-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f03-west-r02-humidity,iaq-c-f03-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f03-west-r02-co2,iaq-c-f03-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+meter-c-f04-power,meter-c-f04,POWER_KW,Active electrical power,number,kW,60
+meter-c-f04-energy,meter-c-f04,ENERGY_KWH,Cumulative electrical energy,number,kWh,60
+ahu-c-f04-east-run,ahu-c-f04-east,RUN,AHU running status,enum,,60
+ahu-c-f04-east-alarm,ahu-c-f04-east,ALARM,AHU alarm status,enum,,60
+ahu-c-f04-east-sat,ahu-c-f04-east,SAT,Supply-air temperature,number,degC,60
+ahu-c-f04-east-rat,ahu-c-f04-east,RAT,Return-air temperature,number,degC,60
+ahu-c-f04-east-sat-sp,ahu-c-f04-east,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f04-east-r01-temperature,iaq-c-f04-east-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f04-east-r01-humidity,iaq-c-f04-east-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f04-east-r01-co2,iaq-c-f04-east-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f04-east-r02-temperature,iaq-c-f04-east-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f04-east-r02-humidity,iaq-c-f04-east-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f04-east-r02-co2,iaq-c-f04-east-r02,CO2,Room carbon dioxide concentration,number,ppm,60
+ahu-c-f04-west-run,ahu-c-f04-west,RUN,AHU running status,enum,,60
+ahu-c-f04-west-alarm,ahu-c-f04-west,ALARM,AHU alarm status,enum,,60
+ahu-c-f04-west-sat,ahu-c-f04-west,SAT,Supply-air temperature,number,degC,60
+ahu-c-f04-west-rat,ahu-c-f04-west,RAT,Return-air temperature,number,degC,60
+ahu-c-f04-west-sat-sp,ahu-c-f04-west,SAT_SP,Supply-air temperature setpoint,number,degC,60
+iaq-c-f04-west-r01-temperature,iaq-c-f04-west-r01,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f04-west-r01-humidity,iaq-c-f04-west-r01,RH,Room relative humidity,number,%RH,60
+iaq-c-f04-west-r01-co2,iaq-c-f04-west-r01,CO2,Room carbon dioxide concentration,number,ppm,60
+iaq-c-f04-west-r02-temperature,iaq-c-f04-west-r02,ROOM_TEMP,Room air temperature,number,degC,60
+iaq-c-f04-west-r02-humidity,iaq-c-f04-west-r02,RH,Room relative humidity,number,%RH,60
+iaq-c-f04-west-r02-co2,iaq-c-f04-west-r02,CO2,Room carbon dioxide concentration,number,ppm,60

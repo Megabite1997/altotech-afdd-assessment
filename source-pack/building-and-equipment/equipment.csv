@@ -1,0 +1,85 @@
+equipment_id,name,equipment_type,property_id,installed_space_id,served_space_id,measurement_scope_id
+meter-a-f01,Building A Floor 1 Electricity Meter,Electricity Meter,building-a,building-a-plant-room,,building-a-f01
+ahu-a-f01-east,AHU A F01 East,AHU,building-a,building-a-plant-room,building-a-f01-east,
+iaq-a-f01-east-r01,IAQ A F01 East Room 1,IAQ Sensor,building-a,building-a-f01-east-r01,,building-a-f01-east-r01
+iaq-a-f01-east-r02,IAQ A F01 East Room 2,IAQ Sensor,building-a,building-a-f01-east-r02,,building-a-f01-east-r02
+ahu-a-f01-west,AHU A F01 West,AHU,building-a,building-a-plant-room,building-a-f01-west,
+iaq-a-f01-west-r01,IAQ A F01 West Room 1,IAQ Sensor,building-a,building-a-f01-west-r01,,building-a-f01-west-r01
+iaq-a-f01-west-r02,IAQ A F01 West Room 2,IAQ Sensor,building-a,building-a-f01-west-r02,,building-a-f01-west-r02
+meter-a-f02,Building A Floor 2 Electricity Meter,Electricity Meter,building-a,building-a-plant-room,,building-a-f02
+ahu-a-f02-east,AHU A F02 East,AHU,building-a,building-a-plant-room,building-a-f02-east,
+iaq-a-f02-east-r01,IAQ A F02 East Room 1,IAQ Sensor,building-a,building-a-f02-east-r01,,building-a-f02-east-r01
+iaq-a-f02-east-r02,IAQ A F02 East Room 2,IAQ Sensor,building-a,building-a-f02-east-r02,,building-a-f02-east-r02
+ahu-a-f02-west,AHU A F02 West,AHU,building-a,building-a-plant-room,building-a-f02-west,
+iaq-a-f02-west-r01,IAQ A F02 West Room 1,IAQ Sensor,building-a,building-a-f02-west-r01,,building-a-f02-west-r01
+iaq-a-f02-west-r02,IAQ A F02 West Room 2,IAQ Sensor,building-a,building-a-f02-west-r02,,building-a-f02-west-r02
+meter-a-f03,Building A Floor 3 Electricity Meter,Electricity Meter,building-a,building-a-plant-room,,building-a-f03
+ahu-a-f03-east,AHU A F03 East,AHU,building-a,building-a-plant-room,building-a-f03-east,
+iaq-a-f03-east-r01,IAQ A F03 East Room 1,IAQ Sensor,building-a,building-a-f03-east-r01,,building-a-f03-east-r01
+iaq-a-f03-east-r02,IAQ A F03 East Room 2,IAQ Sensor,building-a,building-a-f03-east-r02,,building-a-f03-east-r02
+ahu-a-f03-west,AHU A F03 West,AHU,building-a,building-a-plant-room,building-a-f03-west,
+iaq-a-f03-west-r01,IAQ A F03 West Room 1,IAQ Sensor,building-a,building-a-f03-west-r01,,building-a-f03-west-r01
+iaq-a-f03-west-r02,IAQ A F03 West Room 2,IAQ Sensor,building-a,building-a-f03-west-r02,,building-a-f03-west-r02
+meter-a-f04,Building A Floor 4 Electricity Meter,Electricity Meter,building-a,building-a-plant-room,,building-a-f04
+ahu-a-f04-east,AHU A F04 East,AHU,building-a,building-a-plant-room,building-a-f04-east,
+iaq-a-f04-east-r01,IAQ A F04 East Room 1,IAQ Sensor,building-a,building-a-f04-east-r01,,building-a-f04-east-r01
+iaq-a-f04-east-r02,IAQ A F04 East Room 2,IAQ Sensor,building-a,building-a-f04-east-r02,,building-a-f04-east-r02
+ahu-a-f04-west,AHU A F04 West,AHU,building-a,building-a-plant-room,building-a-f04-west,
+iaq-a-f04-west-r01,IAQ A F04 West Room 1,IAQ Sensor,building-a,building-a-f04-west-r01,,building-a-f04-west-r01
+iaq-a-f04-west-r02,IAQ A F04 West Room 2,IAQ Sensor,building-a,building-a-f04-west-r02,,building-a-f04-west-r02
+meter-b-f01,Building B Floor 1 Electricity Meter,Electricity Meter,building-b,building-b-plant-room,,building-b-f01
+ahu-b-f01-east,AHU B F01 East,AHU,building-b,building-b-plant-room,building-b-f01-east,
+iaq-b-f01-east-r01,IAQ B F01 East Room 1,IAQ Sensor,building-b,building-b-f01-east-r01,,building-b-f01-east-r01
+iaq-b-f01-east-r02,IAQ B F01 East Room 2,IAQ Sensor,building-b,building-b-f01-east-r02,,building-b-f01-east-r02
+ahu-b-f01-west,AHU B F01 West,AHU,building-b,building-b-plant-room,building-b-f01-west,
+iaq-b-f01-west-r01,IAQ B F01 West Room 1,IAQ Sensor,building-b,building-b-f01-west-r01,,building-b-f01-west-r01
+iaq-b-f01-west-r02,IAQ B F01 West Room 2,IAQ Sensor,building-b,building-b-f01-west-r02,,building-b-f01-west-r02
+meter-b-f02,Building B Floor 2 Electricity Meter,Electricity Meter,building-b,building-b-plant-room,,building-b-f02
+ahu-b-f02-east,AHU B F02 East,AHU,building-b,building-b-plant-room,building-b-f02-east,
+iaq-b-f02-east-r01,IAQ B F02 East Room 1,IAQ Sensor,building-b,building-b-f02-east-r01,,building-b-f02-east-r01
+iaq-b-f02-east-r02,IAQ B F02 East Room 2,IAQ Sensor,building-b,building-b-f02-east-r02,,building-b-f02-east-r02
+ahu-b-f02-west,AHU B F02 West,AHU,building-b,building-b-plant-room,building-b-f02-west,
+iaq-b-f02-west-r01,IAQ B F02 West Room 1,IAQ Sensor,building-b,building-b-f02-west-r01,,building-b-f02-west-r01
+iaq-b-f02-west-r02,IAQ B F02 West Room 2,IAQ Sensor,building-b,building-b-f02-west-r02,,building-b-f02-west-r02
+meter-b-f03,Building B Floor 3 Electricity Meter,Electricity Meter,building-b,building-b-plant-room,,building-b-f03
+ahu-b-f03-east,AHU B F03 East,AHU,building-b,building-b-plant-room,building-b-f03-east,
+iaq-b-f03-east-r01,IAQ B F03 East Room 1,IAQ Sensor,building-b,building-b-f03-east-r01,,building-b-f03-east-r01
+iaq-b-f03-east-r02,IAQ B F03 East Room 2,IAQ Sensor,building-b,building-b-f03-east-r02,,building-b-f03-east-r02
+ahu-b-f03-west,AHU B F03 West,AHU,building-b,building-b-plant-room,building-b-f03-west,
+iaq-b-f03-west-r01,IAQ B F03 West Room 1,IAQ Sensor,building-b,building-b-f03-west-r01,,building-b-f03-west-r01
+iaq-b-f03-west-r02,IAQ B F03 West Room 2,IAQ Sensor,building-b,building-b-f03-west-r02,,building-b-f03-west-r02
+meter-b-f04,Building B Floor 4 Electricity Meter,Electricity Meter,building-b,building-b-plant-room,,building-b-f04
+ahu-b-f04-east,AHU B F04 East,AHU,building-b,building-b-plant-room,building-b-f04-east,
+iaq-b-f04-east-r01,IAQ B F04 East Room 1,IAQ Sensor,building-b,building-b-f04-east-r01,,building-b-f04-east-r01
+iaq-b-f04-east-r02,IAQ B F04 East Room 2,IAQ Sensor,building-b,building-b-f04-east-r02,,building-b-f04-east-r02
+ahu-b-f04-west,AHU B F04 West,AHU,building-b,building-b-plant-room,building-b-f04-west,
+iaq-b-f04-west-r01,IAQ B F04 West Room 1,IAQ Sensor,building-b,building-b-f04-west-r01,,building-b-f04-west-r01
+iaq-b-f04-west-r02,IAQ B F04 West Room 2,IAQ Sensor,building-b,building-b-f04-west-r02,,building-b-f04-west-r02
+meter-c-f01,Building C Floor 1 Electricity Meter,Electricity Meter,building-c,building-c-plant-room,,building-c-f01
+ahu-c-f01-east,AHU C F01 East,AHU,building-c,building-c-plant-room,building-c-f01-east,
+iaq-c-f01-east-r01,IAQ C F01 East Room 1,IAQ Sensor,building-c,building-c-f01-east-r01,,building-c-f01-east-r01
+iaq-c-f01-east-r02,IAQ C F01 East Room 2,IAQ Sensor,building-c,building-c-f01-east-r02,,building-c-f01-east-r02
+ahu-c-f01-west,AHU C F01 West,AHU,building-c,building-c-plant-room,building-c-f01-west,
+iaq-c-f01-west-r01,IAQ C F01 West Room 1,IAQ Sensor,building-c,building-c-f01-west-r01,,building-c-f01-west-r01
+iaq-c-f01-west-r02,IAQ C F01 West Room 2,IAQ Sensor,building-c,building-c-f01-west-r02,,building-c-f01-west-r02
+meter-c-f02,Building C Floor 2 Electricity Meter,Electricity Meter,building-c,building-c-plant-room,,building-c-f02
+ahu-c-f02-east,AHU C F02 East,AHU,building-c,building-c-plant-room,building-c-f02-east,
+iaq-c-f02-east-r01,IAQ C F02 East Room 1,IAQ Sensor,building-c,building-c-f02-east-r01,,building-c-f02-east-r01
+iaq-c-f02-east-r02,IAQ C F02 East Room 2,IAQ Sensor,building-c,building-c-f02-east-r02,,building-c-f02-east-r02
+ahu-c-f02-west,AHU C F02 West,AHU,building-c,building-c-plant-room,building-c-f02-west,
+iaq-c-f02-west-r01,IAQ C F02 West Room 1,IAQ Sensor,building-c,building-c-f02-west-r01,,building-c-f02-west-r01
+iaq-c-f02-west-r02,IAQ C F02 West Room 2,IAQ Sensor,building-c,building-c-f02-west-r02,,building-c-f02-west-r02
+meter-c-f03,Building C Floor 3 Electricity Meter,Electricity Meter,building-c,building-c-plant-room,,building-c-f03
+ahu-c-f03-east,AHU C F03 East,AHU,building-c,building-c-plant-room,building-c-f03-east,
+iaq-c-f03-east-r01,IAQ C F03 East Room 1,IAQ Sensor,building-c,building-c-f03-east-r01,,building-c-f03-east-r01
+iaq-c-f03-east-r02,IAQ C F03 East Room 2,IAQ Sensor,building-c,building-c-f03-east-r02,,building-c-f03-east-r02
+ahu-c-f03-west,AHU C F03 West,AHU,building-c,building-c-plant-room,building-c-f03-west,
+iaq-c-f03-west-r01,IAQ C F03 West Room 1,IAQ Sensor,building-c,building-c-f03-west-r01,,building-c-f03-west-r01
+iaq-c-f03-west-r02,IAQ C F03 West Room 2,IAQ Sensor,building-c,building-c-f03-west-r02,,building-c-f03-west-r02
+meter-c-f04,Building C Floor 4 Electricity Meter,Electricity Meter,building-c,building-c-plant-room,,building-c-f04
+ahu-c-f04-east,AHU C F04 East,AHU,building-c,building-c-plant-room,building-c-f04-east,
+iaq-c-f04-east-r01,IAQ C F04 East Room 1,IAQ Sensor,building-c,building-c-f04-east-r01,,building-c-f04-east-r01
+iaq-c-f04-east-r02,IAQ C F04 East Room 2,IAQ Sensor,building-c,building-c-f04-east-r02,,building-c-f04-east-r02
+ahu-c-f04-west,AHU C F04 West,AHU,building-c,building-c-plant-room,building-c-f04-west,
+iaq-c-f04-west-r01,IAQ C F04 West Room 1,IAQ Sensor,building-c,building-c-f04-west-r01,,building-c-f04-west-r01
+iaq-c-f04-west-r02,IAQ C F04 West Room 2,IAQ Sensor,building-c,building-c-f04-west-r02,,building-c-f04-west-r02

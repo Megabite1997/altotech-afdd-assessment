@@ -1,0 +1,2 @@
+[console_scripts]
+afdd = afdd.cli:main

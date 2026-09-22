@@ -1,0 +1,45 @@
+[project]
+name = "afdd-platform"
+version = "1.0.0"
+description = "Multi-site Automatic Fault Detection and Diagnostics over a Brickschema model"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "pydantic==2.10.4",
+  "psycopg[binary]==3.2.3",
+  "psycopg-pool==3.2.4",
+  "aiokafka==0.12.0",
+  "anthropic==0.42.0",
+  "python-dotenv==1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.4",
+  "pytest-cov==6.0.0",
+  "httpx==0.28.1",
+  "ruff==0.8.4",
+]
+
+[project.scripts]
+afdd = "afdd.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["afdd*"]
+
+[tool.setuptools.package-data]
+afdd = ["migrations/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires a live database"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
