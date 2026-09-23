@@ -194,6 +194,15 @@ Run the matrix against the real model with:
 docker compose exec api afdd agent evaluate --provider anthropic --output /tmp/matrix.json
 ```
 
+An **explicitly named provider is never substituted**. If `--provider anthropic`
+is given without a usable key the command fails with exit code 2 and an
+explanation, rather than quietly running the stub and reporting a pass — a
+matrix that says "8/8 passed" for a run that tested something other than what
+was asked is the one result this harness must never produce. The summary always
+names the providers and models that actually ran, and the `recoverable-failure`
+case always uses the stub, whatever the rest of the matrix uses, because it
+drives the retry path deterministically.
+
 ## Evolution plan
 
 | Concern | Approach |

@@ -14,7 +14,7 @@ from typing import Any
 
 from .. import db
 from .orchestrator import RuleAuthoringAgent
-from .providers import StubProvider, build_provider_with_fallback
+from .providers import StubProvider, build_provider, build_provider_with_fallback
 
 
 @dataclass
@@ -172,12 +172,26 @@ def check(case: Case, result: dict, known_ids: set[str]) -> tuple[bool, list[str
 
 
 def run_matrix(provider_name: str | None = None, output: Path | None = None) -> dict:
+    """Run every case.
+
+    An explicitly named provider is never substituted. Falling back to the stub
+    here would print "8/8 passed" for a run that tested something other than
+    what was asked for, which is the one result this matrix must never produce.
+    Only the unnamed (configured-default) path may fall back, and it says so.
+    """
+    if provider_name:
+        build_provider(provider_name)  # fail fast, before any case runs
+
     known_ids = _known_entity_ids()
     rows = []
     for case in CASES:
         if case.provider_failures:
+            # This case drives the retry path deterministically and is always
+            # run against the stub, whatever provider the rest of the matrix uses.
             provider = StubProvider(failures_before_success=case.provider_failures)
             fallback = None
+        elif provider_name:
+            provider, fallback = build_provider(provider_name), None
         else:
             provider, fallback = build_provider_with_fallback(provider_name)
         agent = RuleAuthoringAgent(provider=provider)
@@ -212,6 +226,11 @@ def run_matrix(provider_name: str | None = None, output: Path | None = None) -> 
         "passed": sum(1 for r in rows if r["passed"]),
         "failed": [r["case"] for r in rows if not r["passed"]],
         "zero_activation_without_confirmation": (activated or {}).get("n", 0) == 0,
+        "requested_provider": provider_name,
+        # What actually ran, so a reader can never mistake a stub run for a
+        # real-model one.
+        "providers_used": sorted({r["provider"] for r in rows}),
+        "models_used": sorted({r["model"] for r in rows}),
         "cases": rows,
     }
     if output:

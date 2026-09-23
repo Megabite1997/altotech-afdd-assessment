@@ -171,17 +171,29 @@ def cmd_agent_run(args: argparse.Namespace) -> int:
 
 def cmd_agent_evaluate(args: argparse.Namespace) -> int:
     from .agent.cases import run_matrix
+    from .agent.providers import ProviderError
 
     db.wait_for_db()
-    summary = run_matrix(args.provider, Path(args.output) if args.output else None)
+    try:
+        summary = run_matrix(args.provider, Path(args.output) if args.output else None)
+    except ProviderError as exc:
+        print(f"provider {args.provider!r} is unavailable: {exc}", file=sys.stderr)
+        print("Set ANTHROPIC_API_KEY in .env and recreate the container, or run "
+              "with --provider stub to exercise the harness offline.", file=sys.stderr)
+        return 2
     print(f"{'case':<22} {'category':<20} {'expected':<22} {'actual':<22} result")
     for row in summary["cases"]:
         mark = "pass" if row["passed"] else "FAIL"
         print(f"{row['case']:<22} {row['category']:<20} {row['expected']:<22} {row['stop_reason']:<22} {mark}")
         for problem in row["problems"]:
             print(f"    - {problem}")
-    print(f"\n{summary['passed']}/{summary['total']} passed "
-          f"(provider={summary['cases'][0]['provider'] if summary['cases'] else 'n/a'})")
+    providers = "+".join(summary["providers_used"]) or "n/a"
+    models = "+".join(summary["models_used"]) or "n/a"
+    print(f"\n{summary['passed']}/{summary['total']} passed")
+    print(f"providers actually used: {providers} ({models})")
+    if summary["requested_provider"] is None and "stub" in summary["providers_used"]:
+        print("NOTE: no provider was requested and the configured one was unavailable, "
+              "so these cases ran against the deterministic stub, not a real model.")
     return 0 if summary["passed"] == summary["total"] else 1
 
 
