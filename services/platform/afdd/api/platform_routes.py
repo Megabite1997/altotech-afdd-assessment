@@ -66,11 +66,21 @@ def pipeline_health() -> dict:
         WHERE prior_max IS NOT NULL AND observed_at < prior_max - interval '60 seconds'
         """
     )
+    # The evaluation time of the *latest* pass, not the max across all of them:
+    # max() would pin whichever pass happened to carry the highest value.
     runs = db.query(
         """
-        SELECT rule_key, max(started_at) AS last_run_at, max(evaluation_time) AS last_evaluation_time,
-               sum(opened) AS opened, sum(closed) AS closed
-          FROM evaluation_run GROUP BY rule_key ORDER BY rule_key
+        SELECT DISTINCT ON (r.rule_key)
+               r.rule_key,
+               r.started_at      AS last_run_at,
+               r.evaluation_time AS last_evaluation_time,
+               t.opened, t.closed
+          FROM evaluation_run r
+          JOIN (
+              SELECT rule_key, sum(opened) AS opened, sum(closed) AS closed
+                FROM evaluation_run GROUP BY rule_key
+          ) t ON t.rule_key = r.rule_key
+         ORDER BY r.rule_key, r.started_at DESC
         """
     )
     now = datetime.now(timezone.utc)

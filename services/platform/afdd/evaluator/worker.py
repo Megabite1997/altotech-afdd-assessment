@@ -436,6 +436,11 @@ def evaluate_rule(rule_key: str, version: int, rule: RuleDefinition, now: dateti
 
 
 def run_once() -> list[dict]:
+    if settings.eval_clock == "data" and data_clock() is None:
+        # Nothing has been ingested yet. Falling back to wall clock here would
+        # stamp a run with an evaluation time that has no relationship to the
+        # data, so there is simply nothing to evaluate.
+        return []
     now = evaluation_time()
     results = []
     for rule_key, version, rule in active_rules():
